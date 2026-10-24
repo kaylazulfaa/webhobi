@@ -1,0 +1,252 @@
+/* ===== DASAR WEBSITE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: lavenderblush;
+    color: saddlebrown;
+    line-height: 1.7;
+}
+
+/* ===== NAVIGASI ===== */
+nav {
+    background-color: lightpink;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 4px dotted white;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    color: maroon;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: deeppink;
+    color: white;
+}
+
+/* ===== JUDUL ===== */
+header {
+    background-color: mistyrose;
+    text-align: center;
+    padding: 35px 15px;
+    border-radius: 0 0 35px 35px;
+}
+
+h1 {
+    color: deeppink;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: mediumvioletred;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: palevioletred;
+}
+
+/* ===== KONTEN ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* ===== TIGA KOLOM ===== */
+.tiga-kolom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ===== KARTU ===== */
+.kartu {
+    background-color: white;
+    padding: 25px 20px;
+    border: 2px dotted lightpink;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px pink;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-7px);
+    background-color: snow;
+}
+
+.kartu h3 {
+    color: deeppink;
+    margin-bottom: 10px;
+}
+
+.kartu p {
+    color: saddlebrown;
+    font-size: 15px;
+}
+
+.kartu img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* ===== TOMBOL UMUM ===== */
+.tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background-color: hotpink;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background-color: mediumvioletred;
+}
+
+/* ===== TOMBOL SOSIAL MEDIA ===== */
+.sosial-media {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.tombol-sosial {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px lightpink;
+    transition: 0.3s;
+}
+
+/* ===== TOMBOL TIKTOK ===== */
+.tiktok {
+    background-color: mediumvioletred;
+    border: 2px solid pink;
+}
+
+.tiktok:hover {
+    background-color: hotpink;
+    transform: translateY(-4px);
+}
+
+/* ===== TOMBOL INSTAGRAM ===== */
+.instagram {
+    background-color: mediumvioletred;
+    border: 2px solid pink;
+}
+
+.instagram:hover {
+    background-color: hotpink;
+    transform: translateY(-4px);
+}
+
+/* ===== TABEL ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background-color: lightpink;
+    color: maroon;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid pink;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: lavenderblush;
+}
+
+/* ===== FORM KONTAK ===== */
+form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid pink;
+    border-radius: 20px;
+    max-width: 550px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+button {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: mediumvioletred;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+    color: maroon;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 700px) {
+    .tiga-kolom {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 3px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .tombol-sosial {
+        margin: 6px;
+        padding: 10px 16px;
+    }
+}
